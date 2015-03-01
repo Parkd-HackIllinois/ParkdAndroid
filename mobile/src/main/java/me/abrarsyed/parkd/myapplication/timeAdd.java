@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.NumberPicker;
 import android.widget.NumberPicker.OnValueChangeListener;
 import android.widget.TextView;
@@ -14,6 +15,7 @@ import android.widget.TextView;
 public class timeAdd extends ActionBarActivity {
 
     TextView numberView;
+    public final static String EXTRA_MESSAGE = "com.mycompany.myfirstapp.MESSAGE";
 
 
     @Override
@@ -68,10 +70,18 @@ public class timeAdd extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+    public void sendMessage(View view) {
+        Intent intent = new Intent(this, confirm.class);
+        EditText editText = (EditText) findViewById(R.id.main);
+        String message = editText.getText().toString();
+        intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(intent);
+    }
     public void clickOk(View v) {
 
-        Intent intent = new Intent(this, Main.class);
+        Intent intent = new Intent(this, confirm2.class);
         startActivity(intent);
+
     }
     public void clickCancel(View v) {
 

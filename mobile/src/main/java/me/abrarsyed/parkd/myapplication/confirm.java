@@ -6,14 +6,16 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 
 
-public class confim extends ActionBarActivity {
+public class confirm extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_confim);
+        TextView textView = new TextView(this);
+        setContentView(textView);
     }
 
 
@@ -42,6 +44,8 @@ public class confim extends ActionBarActivity {
     public void clickConfirm(View v) {
 
         Intent intent = new Intent(this, Main.class);
+        String message = intent.getStringExtra(timeAdd.EXTRA_MESSAGE);
         startActivity(intent);
+
     }
 }

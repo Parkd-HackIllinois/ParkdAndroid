@@ -28,6 +28,14 @@
             android:name=".confim"
             android:label="@string/title_activity_confim" >
         </activity>
+        <activity
+            android:name=".confirm2"
+            android:label="@string/title_activity_confirm2"
+            android:parentActivityName=".timeAdd" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="me.abrarsyed.parkd.myapplication.timeAdd" />
+        </activity>
     </application>
 
 </manifest>

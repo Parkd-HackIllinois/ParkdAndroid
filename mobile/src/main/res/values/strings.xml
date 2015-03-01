@@ -6,4 +6,5 @@
     <string name="title_activity_main">Main</string>
     <string name="title_activity_time_add">timeAdd</string>
     <string name="title_activity_confim">confim</string>
+    <string name="title_activity_confirm2">confirm2</string>
 </resources>
