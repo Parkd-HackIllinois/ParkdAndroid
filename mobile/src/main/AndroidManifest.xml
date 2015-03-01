@@ -24,6 +24,10 @@
             android:name=".timeAdd"
             android:label="@string/title_activity_time_add" >
         </activity>
+        <activity
+            android:name=".confim"
+            android:label="@string/title_activity_confim" >
+        </activity>
     </application>
 
 </manifest>

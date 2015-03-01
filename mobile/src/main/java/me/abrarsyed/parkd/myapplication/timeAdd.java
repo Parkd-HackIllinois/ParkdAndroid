@@ -68,7 +68,7 @@ public class timeAdd extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
-    public void clickConfirm(View v) {
+    public void clickOk(View v) {
 
         Intent intent = new Intent(this, Main.class);
         startActivity(intent);

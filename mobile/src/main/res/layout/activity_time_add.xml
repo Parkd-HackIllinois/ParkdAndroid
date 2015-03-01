@@ -29,13 +29,13 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Confirm"
+        android:text="OK"
         android:id="@+id/button3"
         android:layout_below="@+id/numberPicker"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
         android:clickable="true"
-        android:onClick="clickConfirm"/>
+        android:onClick="clickOk"/>
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -43,8 +43,8 @@
         android:layout_height="wrap_content"
         android:text="Cancel"
         android:id="@+id/button4"
-        android:layout_below="@+id/button3"
-        android:layout_alignEnd="@+id/numberPicker"
         android:clickable="true"
-        android:onClick="clickCancel"/>
+        android:onClick="clickCancel"
+        android:layout_below="@+id/button3"
+        android:layout_alignEnd="@+id/numberPicker" />
 </RelativeLayout>
